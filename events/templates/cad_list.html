@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for jogador in jogadores %}
+
+        <div>
+            <h1><a href="{% url 'cad_detail' pk=jogador.pk %}">{{ jogador.nome }}</a></h1>
+        </div>
+                <p>
+                    <a href="{% url 'cad_edit' pk=jogador.pk %}">Editar</a>
+                </p>
+     
+    {% endfor %}
+{% endblock %}

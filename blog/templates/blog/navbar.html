@@ -1,0 +1,35 @@
+<!-- navbar -->
+<!-- arquivo HTML onde entra o app blog -->
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4 text-muted">
+                    <h4 class="text-white">Tudo Sobre O Borrusia Dortmund</h4>
+                    <p class="text-light">O Borussia Dortmund foi fundado em 1909 por dezoito jogadores de futebol de Dortmund. O Borussia Dortmund venceu oito campeonatos alemães , quatro DFB-Pokals , cinco DFL-Supercups , uma UEFA Champions League , uma Taça dos Vencedores das Taças e uma Taça Intercontinental . A conquista da Taça dos Vencedores das Taças em 1966 fez deles o primeiro clube alemão a conquistar um título europeu.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Opções</h4>
+                    <ul class="list-unstyled">
+                        
+                        <li><a class="text-white" href="{% url 'agenda-events-index' %}">Agenda de Jogos</a></li>
+                        <li><a class="text-white" href="/admin" target="_blank">Administração</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <span class="navbar-brand d-flex align-items-center">
+                <strong><a class="text-white" href="{% url 'post_list' %}">Blog Do Torcedor</a></strong>
+            </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+<!--
+    vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
+-->

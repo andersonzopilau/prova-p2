@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="pt-BR">
+
+{% include "header.html" %}
+    <body>
+{% include "navbar.html" %}
+
+        <div class="jumbotron rounded-0 text-center div-background">
+                <h1 class="display-5">Jogadores</h1>
+        </div>
+
+
+        <div class="content container">
+            <a href="{% url 'cad_new' %}" class="top-menu">Nova jogador</a>
+        </div>
+            </br>
+                <div class="col-md-12">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+        {% include "footer.html" %}
+    </body>
+</html>

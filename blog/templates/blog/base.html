@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="pt-BR">
+
+{% include "blog/header.html" %}
+    <body>
+{% include "blog/navbar.html" %}
+
+        <div class="jumbotron rounded-0 text-center div-background">
+                <h1 class="display-5">Noticias do Clube</h1>
+        </div>
+
+
+        <div class="content container">
+            <div class="row">
+                        <div class="col-md-12">
+                <a href="{% url 'agenda-events-all' %}">Próximos jogos!</a>
+        </div>
+                        <div class="col-md-12">
+            <a href="{% url 'post_new' %}" class="top-menu">Nova Postagem</a>
+        </div>
+            </br>
+                <div class="col-md-12">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+        {% include "footer.html" %}
+    </body>
+</html>

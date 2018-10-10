@@ -1,0 +1,9 @@
+.div-background{
+    background-image: url('https://www.hemispheres-voyages.fr/files/PHOTOS/STADE/SIGNAL_IDUNA_PARK.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 0px 0px 16px #000, 0px 0px 64px #00f;
+
+}

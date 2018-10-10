@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+     <div class="post">
+        {{ jogador.nome }}
+        {{ jogador.idade }}
+        {{ jogador.nacionalidade }}
+        {{ jogador.pebom }}
+        {{ jogador.posicao }}
+        {{ jogador.sexo }}
+        {{ jogador.raca }}  
+         <a href="{% url 'cad_edit' pk=jogador.pk %}">Editar</a>
+
+     </div>
+{% endblock %}
